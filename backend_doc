@@ -1,0 +1,73 @@
+/users/register:
+*   post:
+*     summary: add user
+*     parameters:  
+*	- name: body
+ *         in: body
+ *         description: user object
+ *         required: true
+*     responses:
+*       200:
+*         description: { message: string, user : User}
+*/
+   
+   
+/users/getUserById/{UserId}:
+ *   get:
+ *     description: gets a user by id.
+ *     parameters:
+ *       - name: UserId
+ *         description: the user id.
+ *         required: true                     
+ *     responses:
+ *         description: the user object.           
+ */
+ 
+ * /users/{UserId}:
+ *   post:
+ *     description: update user object
+ *     parameters:
+ *       - name: UserId
+ *         in: params
+ *         description: the user id.
+ *         required: true   
+ *       - name: body
+ *         in: body
+ *         description: user object
+ *         required: true
+ *     responses:
+ *       200:
+ *         description: user object.        
+ */
+ 
+  * /users/{UserId}:
+ *   delete:
+ *     description: deletes a user by id.
+ *     parameters:
+ *       - name: UserId
+ *         in: params
+ *         description: the user id.
+ *         required: true                     
+ *     responses:
+ *       200:
+ *         description: the user id.          
+ */
+   * users/AddFavoris:
+ *   post:
+ *     description: deletes a user by id.
+ *     parameters:
+ *       - id: UserId
+ *         idFilm: the film to add in favori
+ *                            
+ *     responses:
+ *       200:
+ *         description: ok        
+ */
+   */Films')
+        get:
+        description: get list of films
+ *     parameters:
+ *             
+ *     responses:
+ *       200:
+ *          list of films   
