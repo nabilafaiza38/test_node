@@ -22,7 +22,7 @@ const getUserById = (req, res) => {
 
 
 const AddFavoris = (req, res) => {userModel.findById(req.params.id)
-    .then(data => {
+    .then(data => { 
         data.favoriteFoods.push(req.body.idFilm)
         data.nom=req.body.nom,
         data.prenom=req.body.prenom,
